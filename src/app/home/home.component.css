@@ -12,6 +12,9 @@ body {
   .card {
     height: 100%;
   }
+  .card-image-top{
+    margin-top:0px;
+  }
   body{
     background-color:#f0f0f5; 
   }
@@ -37,7 +40,8 @@ footer{
   background-color:#1e2f2f;
 }
 .heading{
-  margin:10px 560px;
+  margin:10px 450px;
+  
  
 }
 

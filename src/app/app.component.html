@@ -1,6 +1,6 @@
 <body>
   <div style="height:56px">
-    <nav class="navbar navbar-expand-lg navbar-dark  fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark  fixed-top" data-hover="dropdown">
       <div class="container">
         <img src="../assets/images/icon.jpg" width='100px' height="80px">
         <a class="navbar-brand" href="#">Bulls Gym</a>
@@ -11,7 +11,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home
+              <a class="nav-link" routerLink="/home">Home
                 <span class="sr-only">(current)</span>
               </a>
             </li>
@@ -22,7 +22,7 @@
                 Exercises
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="../startbootstrap-1-col-portfolio-gh-pages/Chest.html">Chest</a>
+                <a class="dropdown-item" routerLink="/exercises/chest">Chest</a>
                 <a class="dropdown-item" href="../startbootstrap-1-col-portfolio-gh-pages/shoulder.html">Shoulders</a>
                 <a class="dropdown-item" href="#">Biceps</a>
                 <a class="dropdown-item" href="#">Triceps</a>
@@ -47,7 +47,7 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="../signup/signup.html">SignUp</a>
+              <a class="nav-link" routerLink="/signup">SignUp</a>
             </li>
 
           </ul>
