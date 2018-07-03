@@ -11,7 +11,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home
+              <a class="nav-link" href="#" routerLink="/home" routerLinkActive="">Home
                 <span class="sr-only">(current)</span>
               </a>
             </li>
@@ -22,12 +22,14 @@
                 Exercises
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="../startbootstrap-1-col-portfolio-gh-pages/Chest.html">Chest</a>
-                <a class="dropdown-item" href="../startbootstrap-1-col-portfolio-gh-pages/shoulder.html">Shoulders</a>
-                <a class="dropdown-item" href="#">Biceps</a>
-                <a class="dropdown-item" href="#">Triceps</a>
-                <a class="dropdown-item" href="../startbootstrap-1-col-portfolio-gh-pages/back.html">Back</a>
-                <a class="dropdown-item" href="../startbootstrap-1-col-portfolio-gh-pages/legs.html">Legs</a>
+                <nav>
+                <a class="dropdown-item"  routerLink="/exercises/chest" routerLinkActive="active" >Chest</a>
+                <a class="dropdown-item" routerLink="/exercises/shoulder">shoulder</a>
+                <a class="dropdown-item"  routerLink="exercises/biceps">Biceps</a>
+                <a class="dropdown-item" routerLink="exercises/triceps">Triceps</a>
+                <a class="dropdown-item" routerLink="exercises/back">Back</a>
+                <a class="dropdown-item" routerLink="exercises/legs">Legs</a>
+              </nav>
               </div>
             </li>
 
@@ -47,7 +49,7 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="../signup/signup.html">SignUp</a>
+              <a class="nav-link" routerLink="/signup">SignUp</a>
             </li>
 
           </ul>
