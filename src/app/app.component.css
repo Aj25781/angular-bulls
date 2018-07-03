@@ -2,6 +2,12 @@ body{
     background-color:#f0f0f5; 
   }
 
+.container{
+  margin-left: 0px;
+  margin-right: 0px;
+  max-width: 100%;
+}
+
 
 footer{
   background-color:#1e2f2f;
@@ -17,13 +23,33 @@ footer{
   font-size:20px;
   background-color:#1e2f2f;
 }
+
+.navbar-nav{
+  margin-left:35px;
+}
+
+.nav-item{
+  margin-left:30px;
+}
+
+.login{
+  margin-left:150px;
+ 
+ 
+}
+
+#nav-login{
+  float:left;
+  flex-direction: row;
+  
+}
 .heading{
   margin:10px 560px;
  
 }
 
 .navbar-brand{
-  margin-left:20px;
+  margin-left:30px;
   font-size:30px;
   letter-spacing: 3px;
   
@@ -42,3 +68,4 @@ footer{
 .col-md-4{
   margin-top:20px;
 }
+
