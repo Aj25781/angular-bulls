@@ -9,6 +9,7 @@ import {TricepsComponent} from './exercises/triceps/triceps.component';
 import {BackComponent} from './exercises/back/back.component';
 import {LegsComponent} from './exercises/legs/legs.component';
 import {SignupComponent} from './signup/signup.component';
+import { LoginComponent } from './login/login.component';
 
 
 const routes: Routes=[
@@ -20,7 +21,8 @@ const routes: Routes=[
 {path: 'exercises/triceps', component:TricepsComponent},
 {path: 'exercises/back', component:BackComponent},
 {path: 'exercises/legs', component:LegsComponent},
-{path: 'signup', component:SignupComponent}
+{path: 'signup', component:SignupComponent},
+{path: 'login', component:LoginComponent}
 
 ];
 @NgModule({
@@ -34,4 +36,4 @@ const routes: Routes=[
 export class AppRoutingModule { }
 
 export const routingComponents = [HomeComponent, ChestComponent, ShoulderComponent, BicepsComponent,
-TricepsComponent, BackComponent, LegsComponent, SignupComponent];
+TricepsComponent, BackComponent, LegsComponent, SignupComponent, LoginComponent];
