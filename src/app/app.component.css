@@ -29,6 +29,7 @@ footer{
   background-color:#1e2f2f;
 }
 
+
 .navbar-nav{
   margin-left:35px;
 }
@@ -37,17 +38,6 @@ footer{
   margin-left:30px;
 }
 
-.login{
-  margin-left:150px;
- 
- 
-}
-
-#nav-login{
-  float:left;
-  flex-direction: row;
-  
-}
 .heading{
   margin:10px 560px;
  
@@ -60,7 +50,18 @@ footer{
   
 }
 
+.navbar-brand:hover{
+  color:white !important  ;
+}
 
+.navbar-collapse{
+  background-color:#1e2f2f;
+}
+
+.login{
+  display:inherit;
+  margin-left:180px;
+}
 .col-md-2 a:hover{
   text-decoration: none;
 }
@@ -76,7 +77,11 @@ footer{
 
 
   nav a:hover {
-    color:white;
+    color:brown;
     
+  }
+
+  .active a{
+    margin:0px;
   }
   
