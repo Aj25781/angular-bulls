@@ -6,12 +6,15 @@
   background-size:cover;
   
   margin-top:24px;
+  padding:60px;
 
 }
 .background{
   background: rgba(255, 255, 255, 0.6);
   width:600px;
   margin:0px auto;
+  
+  border-radius:8px;
   
 }
 form{
@@ -20,7 +23,6 @@ form{
   color:black;
   
  
-  border-radius:8px;
   
 }
 
@@ -29,6 +31,7 @@ form{
   margin-bottom: 20px;
   margin-left:250px;
   margin-right:auto;
+  padding-top:20px;
 }
 
 .form-group{

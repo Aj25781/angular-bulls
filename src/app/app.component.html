@@ -3,7 +3,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark  fixed-top" data-hover="dropdown">
       <div class="container">
         <img src="../assets/images/icon.jpg" width='100px' height="80px">
-        <a class="navbar-brand" href="#">Bulls Gym</a>
+        <a class="navbar-brand" routerLink='/home'>Bulls Gym</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
           aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -44,7 +44,7 @@
            <div class="login">
            <ul class="navbar-nav">
               <li class="nav-item">
-                  <a class="nav-link" href="#" id="nav-login" onclick="document.getElementById('id01').style.display='block'">Login</a>
+                  <a class="nav-link" href="#" id="nav-login" routerLink="/login">Login</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" routerLink="/signup" id="nav-login">SignUp</a>
@@ -56,35 +56,8 @@
     </nav>
   </div>
   <router-outlet></router-outlet>
-  <!--Login-->
-  <div id="id01" class="modal">
+ 
   
-      <form class="modal-content animate" action="/action_page.php">
-        <div class="imgcontainer">
-          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-          <img src="../assets/images/icon.jpg" alt="Gym-icon" class="avatar">
-        </div>
-    
-        <div class="form-group">
-          <label for="email"><b>E-mail</b></label>
-          <input class="form-control" type="email" placeholder="Enter Email" name="email" required>
-    
-          <label for="psw"><b>Password</b></label>
-          <input class="form-control" type="password" placeholder="Enter Password" name="psw" required>
-            
-          <button type="submit">Login</button>
-          <label>
-            <input type="checkbox" checked="checked" name="remember"> Remember me
-          </label>
-        </div>
-    
-        <div class="form-group" style="background-color:#f1f1f1">
-          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-          
-        </div>
-      </form>
-    </div>
-    
   <!-- Footer -->
   <footer class="page-footer font-small indigo mt-4">
 
