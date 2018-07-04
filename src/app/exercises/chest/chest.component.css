@@ -8,7 +8,13 @@ body {
     padding-top: 56px;
   }
 }
-
+.container{
+  margin-top:24px;
+}
 .my-4{
-    margin-top:30px;  
+    margin-top:40px !important;  
+}
+
+.image{
+  margin-bottom:20px;
 }
