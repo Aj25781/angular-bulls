@@ -14,12 +14,9 @@ import {RouterModule} from '@angular/router';
   imports: [
     BrowserModule,
     AppRoutingModule,
-<<<<<<< HEAD
     ReactiveFormsModule,
-    FormsModule
-=======
+    FormsModule,
     RouterModule
->>>>>>> e19505898bd60f57b0107be2a9c3d36ba0063795
   ],
   providers: [],
   bootstrap: [AppComponent],
