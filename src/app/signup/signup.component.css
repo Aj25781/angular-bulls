@@ -21,9 +21,7 @@ form{
   max-width:600px;
   margin: 0px auto 0px auto;
   color:black;
-  
- 
-  
+   
 }
 
 .display-4{
@@ -38,6 +36,7 @@ form{
  max-width: 500px;
   margin:0px auto;
   padding:10px;
+  
 }
 
 
@@ -49,4 +48,9 @@ form .col-md-3{
 
 .btn-danger{
   margin-left:200px;
+}
+
+.form-check-inline{
+  margin:20px 10px 20px 60px;
+ 
 }

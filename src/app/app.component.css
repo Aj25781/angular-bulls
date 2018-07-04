@@ -8,6 +8,10 @@ body{
   max-width: 100%;
 }
 
+@font-face{
+  font-family:'Bulls';
+  src:url("../assets/fonts/TwoPeaks.ttf");
+}
 
 footer{
   margin-top:0px !important;
@@ -69,3 +73,10 @@ footer{
 .col-md-4{
   margin-top:20px;
 }
+
+
+  nav a:hover {
+    color:white;
+    
+  }
+  
