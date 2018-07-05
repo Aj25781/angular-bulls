@@ -1,6 +1,3 @@
-body{
-    background-color:#f0f0f5; 
-  }
 
 .container{
   margin-left: 0px;
@@ -78,6 +75,7 @@ footer{
     
   }
 
+
   .active a{
     margin:0px;
   }
@@ -86,7 +84,7 @@ footer{
     left:-93px;
   }
   
-  @media (min-width:768px) and (max-width:1000px){
+  @media (min-width:768px) and (max-width:1012px){
     .navbar-expand-md{
       padding:5px;
       font-size:15px;
@@ -118,10 +116,11 @@ footer{
     }
 
     .navbar-brand{
-      margin-left:16px !important;
+      margin-left:10px !important;
     }
   }
 
+ 
   .img-responsive{
     margin-left:50px;
   }

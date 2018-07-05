@@ -12,7 +12,10 @@ body {
   .my-4{
       margin-top:40px !important;  
   }
-  .crouselimage
-  {
-    margin:40px;
+ 
+.carousel-inner{
+  margin-bottom:40px;
+}
+  .container{
+    margin-top:130px;
   }
