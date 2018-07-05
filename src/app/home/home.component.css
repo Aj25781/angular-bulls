@@ -11,9 +11,15 @@ body {
   
   .card {
     height: 100%;
+    border-radius:60px;
+
   }
   .card-image-top{
     margin-top:0px;
+    
+  }
+  .card-body{
+     background:linear-gradient(white,grey);
   }
   body{
     background-color:#f0f0f5; 
@@ -86,7 +92,9 @@ footer{
 }
 
 .col-md-6 img{
-  margin-top:55px;
+  margin-top:0px;
+  border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
 }
 
 /*artical css*/
@@ -146,4 +154,8 @@ footer{
   img{
     width:300px;
   }
+}
+
+.img{
+  margin-top:55px;
 }
