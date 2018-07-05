@@ -1,54 +1,61 @@
 <body>
- 
-    
-<nav class="navbar navbar-expand-md navbar-dark">
-    <img class="img-responsive" src="../assets/images/icon.jpg" width='100px' height="80px" style="margin-left:50px">
+
+
+  <nav class="navbar navbar-expand-md navbar-dark">
+    <img class="img-responsive" src="../assets/images/icon.jpg" width='100px' height="80px" >
     <a class="navbar-brand" href="#">Bulls Gym</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="collapsibleNavbar" syt>
-      <ul class="navbar-nav">
+      <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-            <a class="nav-link" routerLink="/home">Home</a>
+          <a class="nav-link" routerLink="/home">Home</a>
         </li>
         <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Exercises
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            Exercises
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" routerLink="/exercises/chest" routerLinkActive="active">Chest</a>
+            <a class="dropdown-item" routerLink="/exercises/shoulder" routerLinkActive="active" style="margin:0px;">shoulder</a>
+            <a class="dropdown-item" routerLink="exercises/biceps" routerLinkActive="active">Biceps</a>
+            <a class="dropdown-item" routerLink="exercises/triceps" routerLinkActive="active">Triceps</a>
+            <a class="dropdown-item" routerLink="exercises/back" routerLinkActive="active">Back</a>
+            <a class="dropdown-item" routerLink="exercises/legs" routerLinkActive="active">Legs</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Products</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Motivation</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              <i class="fas fa-user-circle white-text"> </i>
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item"  routerLink="/exercises/chest" routerLinkActive="active" >Chest</a>
-                <a class="dropdown-item" routerLink="/exercises/shoulder" routerLinkActive="active" style="margin:0px;">shoulder</a>
-                <a class="dropdown-item"  routerLink="exercises/biceps" routerLinkActive="active">Biceps</a>
-                <a class="dropdown-item" routerLink="exercises/triceps" routerLinkActive="active">Triceps</a>
-                <a class="dropdown-item" routerLink="exercises/back" routerLinkActive="active">Back</a>
-                <a class="dropdown-item" routerLink="exercises/legs" routerLinkActive="active">Legs</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="nav-login" routerLink="/login" style="color:black">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/signup" id="nav-login" style="color:black">SignUp</a>
+                </li>
             </div>
           </li>
-          <li class="nav-item">
-              <a class="nav-link" href="#">Products</a>
-            </li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="#">Motivation</a>
-            </li>
-            <span class="login">
-                <li class="nav-item">
-                    <a class= "nav-link" href="#" id="nav-login" routerLink="/login">Login</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" routerLink="/signup" id="nav-login">SignUp</a>
-                  </li>
-              </span>
-            
-          </ul>
-         
-    </div>  
+      </ul>
+
+    </div>
   </nav>
 
   <router-outlet></router-outlet>
- 
-  
+
+
   <!-- Footer -->
   <footer class="page-footer font-small indigo mt-4">
 
@@ -140,17 +147,17 @@
           </div>
 
         </div>
-    
-      </div>
 
       </div>
-      <!-- Footer Links -->
 
-      <!-- Copyright -->
-      <div class="footer-copyright text-center py-3">© 2018 Copyright Bulls Gym
+    </div>
+    <!-- Footer Links -->
 
-      </div>
-      <!-- Copyright -->
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2018 Copyright Bulls Gym
+
+    </div>
+    <!-- Copyright -->
 
   </footer>
   <!-- Footer -->

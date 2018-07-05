@@ -55,3 +55,9 @@ form .col-md-3{
   margin:20px 10px 20px 60px;
  
 }
+
+@media (max-width:768px){
+  .background{
+    width:100%;
+  }
+}

@@ -88,3 +88,9 @@ footer{
 .col-md-6 img{
   margin-top:55px;
 }
+
+@media(min-width:768px) and (max-width:832px){
+  img{
+    width:300px;
+  }
+}
