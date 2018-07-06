@@ -10,14 +10,11 @@ import {BackComponent} from './exercises/back/back.component';
 import {LegsComponent} from './exercises/legs/legs.component';
 import {SignupComponent} from './signup/signup.component';
 import { LoginComponent } from './login/login.component';
-<<<<<<< HEAD
 import {AboutUsComponent} from './about-us/about-us.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 
-=======
 import { MotivationComponent } from './gallery/motivation/motivation.component';
 import { TransformationComponent } from './gallery/transformation/transformation.component';
->>>>>>> 8bfdcd5c070e4ac20a183a20d8ab946f0f319ef5
 
 
 const routes: Routes=[
@@ -31,13 +28,10 @@ const routes: Routes=[
 {path: 'exercises/legs', component:LegsComponent},
 {path: 'signup', component:SignupComponent},
 {path: 'login', component:LoginComponent},
-<<<<<<< HEAD
 {path: 'about-us', component:AboutUsComponent},
-{path: 'contact-us',component:ContactUsComponent}
-=======
+{path: 'contact-us',component:ContactUsComponent},
 {path: 'gallery/motivation',component:MotivationComponent},
 {path: 'gallery/transformatio',component:TransformationComponent}
->>>>>>> 8bfdcd5c070e4ac20a183a20d8ab946f0f319ef5
 
 ];
 @NgModule({
@@ -53,9 +47,6 @@ const routes: Routes=[
 export class AppRoutingModule { }
 
 export const routingComponents = [HomeComponent, ChestComponent, ShoulderComponent, BicepsComponent,
-<<<<<<< HEAD
 TricepsComponent, BackComponent, LegsComponent, SignupComponent, LoginComponent,AboutUsComponent,
-ContactUsComponent];
-=======
-TricepsComponent, BackComponent, LegsComponent, SignupComponent, LoginComponent,MotivationComponent,TransformationComponent];
->>>>>>> 8bfdcd5c070e4ac20a183a20d8ab946f0f319ef5
+ContactUsComponent,MotivationComponent,TransformationComponent];
+
