@@ -10,6 +10,9 @@ import {BackComponent} from './exercises/back/back.component';
 import {LegsComponent} from './exercises/legs/legs.component';
 import {SignupComponent} from './signup/signup.component';
 import { LoginComponent } from './login/login.component';
+import {AboutUsComponent} from './about-us/about-us.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
+
 
 
 const routes: Routes=[
@@ -22,12 +25,16 @@ const routes: Routes=[
 {path: 'exercises/back', component:BackComponent},
 {path: 'exercises/legs', component:LegsComponent},
 {path: 'signup', component:SignupComponent},
-{path: 'login', component:LoginComponent}
+{path: 'login', component:LoginComponent},
+{path: 'about-us', component:AboutUsComponent},
+{path: 'contact-us',component:ContactUsComponent}
 
 ];
 @NgModule({
   imports: [
-    CommonModule,
+
+
+  CommonModule,
     RouterModule.forRoot(routes)
   ],
   exports: [RouterModule],
@@ -36,4 +43,5 @@ const routes: Routes=[
 export class AppRoutingModule { }
 
 export const routingComponents = [HomeComponent, ChestComponent, ShoulderComponent, BicepsComponent,
-TricepsComponent, BackComponent, LegsComponent, SignupComponent, LoginComponent];
+TricepsComponent, BackComponent, LegsComponent, SignupComponent, LoginComponent,AboutUsComponent,
+ContactUsComponent];
