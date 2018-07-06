@@ -29,10 +29,18 @@
         <li class="nav-item">
           <a class="nav-link" href="#">Products</a>
         </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="#">Motivation</a>
-        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Gallery
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" routerLink="/gallery/motivation" routerLinkActive="active">Motivation's</a>
+              <a class="dropdown-item" routerLink="/gallery/transformation" routerLinkActive="active" style="margin:0px;">Transformation's</a>
+             
+            </div>
+          </li>
+       
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
               aria-expanded="false">

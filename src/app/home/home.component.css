@@ -28,12 +28,13 @@ body {
   .carousel-inner img {
     width: 100%;
     height: 500px;
-    margin-top:90px;
+    margin-top:0px;
 }
 
 footer{
   background-color:#1e2f2f;
   color:white;
+  
 }
 
 .footer-copyright{
@@ -162,5 +163,5 @@ footer{
 .ajay{
   border-radius:70%;
   height:160px;
-  width:160px
+  width:160px;
 }
