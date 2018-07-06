@@ -21,9 +21,10 @@ footer{
 }
 
 .navbar{
-  
+  padding:5px;
   font-size:20px;
   background-color:#1e2f2f;
+
 }
 
 .nav-item{
