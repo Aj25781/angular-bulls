@@ -16,6 +16,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { MotivationComponent } from './gallery/motivation/motivation.component';
 import { TransformationComponent } from './gallery/transformation/transformation.component';
 
+import { CareersComponent } from './careers/careers.component';
 
 const routes: Routes=[
 {path: '', redirectTo:'/home', pathMatch: 'full'},  
@@ -31,7 +32,8 @@ const routes: Routes=[
 {path: 'about-us', component:AboutUsComponent},
 {path: 'contact-us',component:ContactUsComponent},
 {path: 'gallery/motivation',component:MotivationComponent},
-{path: 'gallery/transformatio',component:TransformationComponent}
+{path: 'gallery/transformatio',component:TransformationComponent},
+{path: 'careers',component:CareersComponent}
 
 ];
 @NgModule({
@@ -48,5 +50,5 @@ export class AppRoutingModule { }
 
 export const routingComponents = [HomeComponent, ChestComponent, ShoulderComponent, BicepsComponent,
 TricepsComponent, BackComponent, LegsComponent, SignupComponent, LoginComponent,AboutUsComponent,
-ContactUsComponent,MotivationComponent,TransformationComponent];
+ContactUsComponent,MotivationComponent,TransformationComponent,CareersComponent];
 
