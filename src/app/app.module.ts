@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import {HttpModule} from '@angular/http';
 import { AppRoutingModule, routingComponents } from './/app-routing.module';
 import {RouterModule} from '@angular/router';
+import { CareersComponent } from './careers/careers.component';
 
 
 
@@ -12,6 +13,7 @@ import {RouterModule} from '@angular/router';
   declarations: [
     AppComponent,
     routingComponents,
+    CareersComponent,
      
   ],
   imports: [
