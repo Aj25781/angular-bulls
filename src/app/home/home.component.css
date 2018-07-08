@@ -25,6 +25,9 @@ body {
     background-color:#f0f0f5; 
   }
 
+  .carousel-inner{
+    margin-top:80px;
+  }
   .carousel-inner img {
     width: 100%;
     height: 500px;
@@ -34,6 +37,7 @@ body {
 footer{
   background-color:#1e2f2f;
   color:white;
+  
 }
 
 .footer-copyright{
@@ -91,10 +95,14 @@ footer{
   width:100%;
 }
 
-.col-md-6 img{
+.col-lg-3 img{
   margin-top:0px;
   border-top-left-radius: 60px;
     border-top-right-radius: 60px;
+}
+.col-md-6 img{
+  margin-top:40px;
+
 }
 
 /*artical css*/
@@ -158,4 +166,13 @@ footer{
 
 .img{
   margin-top:55px;
+}
+.ajay{
+  border-radius:70%;
+  height:160px;
+  width:160px;
+}
+
+.bmi_special_links{
+  display:none;
 }
