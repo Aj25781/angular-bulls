@@ -61,6 +61,12 @@ export class SignupComponent implements OnInit {
       this.flashmessages.show('Please fill the valid email ',{cssClass:'alert-danger',timeout:3000});
       return false;
     }
+    if(this.myForm.controls.password.value!=this.myForm.controls.Cnfpassword.value)
+     {
+      console.log('!Invalid password');
+      return false;
+     }
+        
     this.authservice.registerUser(newUser)
       .subscribe(data => {
      if(data.success)
