@@ -5,13 +5,18 @@ import { AppComponent } from './app.component';
 import {HttpModule} from '@angular/http';
 import { AppRoutingModule, routingComponents } from './/app-routing.module';
 import {RouterModule} from '@angular/router';
-
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { AuthService } from './services/auth.service';
+import { ValidateService } from './services/validate.service';
+import { FlashMessagesModule } from 'angular2-flash-messages';
+import { AuthGuard } from './guards/auth.guard';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     routingComponents,
+    DashboardComponent,
     
      
   ],
@@ -20,9 +25,10 @@ import {RouterModule} from '@angular/router';
     AppRoutingModule,
     ReactiveFormsModule,
     FormsModule,
-    RouterModule
+    RouterModule,
+    FlashMessagesModule.forRoot()
   ],
-  providers: [],
+  providers: [AuthService,ValidateService,AuthGuard],
   bootstrap: [AppComponent],
   exports:[HttpModule]
 })
