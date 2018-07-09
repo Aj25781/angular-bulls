@@ -25,6 +25,13 @@ body {
     background-color:#f0f0f5; 
   }
 
+  h1{
+    font-family: Impact, Charcoal, sans-serif;
+  }
+
+  h5{
+    font-size:1.15rem;
+  }
   .carousel-inner{
     margin-top:80px;
   }

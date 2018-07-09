@@ -8,7 +8,14 @@ body {
       padding-top: 56px;
     }
   }
+  h1{
+  font-family: Impact, Charcoal, sans-serif;
+}
+
+h3{
   
+  font-family: Impact, Charcoal, sans-serif;
+}
   .my-4{
       margin-top:40px !important;  
   }
@@ -19,3 +26,21 @@ body {
   .container{
     margin-top:130px;
   }
+
+  @media (min-width:767px) and (max-width:993px){
+    .col-md-7{
+      margin-left:30px;
+      margin-right:30px;
+    }
+    .col-md-5{
+      margin-left:212px;
+      margin-right:212px;
+    }
+    }
+    
+    @media (min-width:994px ) and (max-width:1199px){
+      .col-md-5{
+        padding-left:110px;
+        padding-right:20px;
+      }
+    }

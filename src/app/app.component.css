@@ -76,10 +76,11 @@ footer{
     
   }
 
-
-  .active a{
-    margin:0px;
+  .navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active,
+   .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link
+  { color:yellow;
   }
+ 
 
   .dropdown-menu{
     left:-93px;
