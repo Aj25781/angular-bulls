@@ -65,6 +65,7 @@ export class SignupComponent implements OnInit {
      {
       console.log('!Invalid password');
       return false;
+      
      }
         
     this.authservice.registerUser(newUser)
