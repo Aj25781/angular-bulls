@@ -1,7 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Signup } from '../signup';
-import { GymService } from '../gym.service';
+import { AuthService } from '../services/auth.service';
+import { ValidateService } from '../services/validate.service';
+import { FlashMessagesService } from 'angular2-flash-messages';
+import { Router } from '@angular/router';
+
+
 
 
 @Component({
@@ -23,7 +28,7 @@ export class SignupComponent implements OnInit {
   myForm: FormGroup;
 
 
-  constructor(private gymservice: GymService, private fb: FormBuilder) { }
+  constructor(private authservice: AuthService, private fb: FormBuilder, private validateservice: ValidateService, private flashmessages: FlashMessagesService,private router:Router) { }
 
   ngOnInit() {
     this.myForm = this.fb.group({
@@ -47,10 +52,27 @@ export class SignupComponent implements OnInit {
       gender: this.myForm.value.gender,
       password: this.myForm.value.password
     }
-    this.gymservice.AddDetails(newUser)
-      .subscribe(user => {
-        this.signup.push(user.data);
-        this.myForm.reset();
+    if (!this.validateservice.validateRegister(newUser)) {
+      this.flashmessages.show('Please fill in all fields', { cssClass: 'alert-danger', timeout: 3000 });
+      return false;
+    }
+    if(!this.validateservice.validateEmail(newUser.email))
+    {
+      this.flashmessages.show('Please fill the valid email ',{cssClass:'alert-danger',timeout:3000});
+      return false;
+    }
+    this.authservice.registerUser(newUser)
+      .subscribe(data => {
+     if(data.success)
+     {
+       this.flashmessages.show('You are now registered and can login',{cssClss:'alert-success',timeout:3000});
+       this.router.navigate(['/login']);
+     }
+     else
+     {
+       this.flashmessages.show('Something went wrong',{cssClass:'alert-danger',timeout:3000});
+       this.router.navigate(['/signup']);
+     }
       });
   }
 
