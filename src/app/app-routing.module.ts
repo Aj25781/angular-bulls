@@ -17,6 +17,8 @@ import { MotivationComponent } from './gallery/motivation/motivation.component';
 import { TransformationComponent } from './gallery/transformation/transformation.component';
 
 import { CareersComponent } from './careers/careers.component';
+import {ProfileComponent} from './profile/profile.component';
+import {ProductsComponent} from './products/products.component';
 
 const routes: Routes=[
 {path: '', redirectTo:'/home', pathMatch: 'full'},  
@@ -33,14 +35,14 @@ const routes: Routes=[
 {path: 'contact-us',component:ContactUsComponent},
 {path: 'gallery/motivation',component:MotivationComponent},
 {path: 'gallery/transformatio',component:TransformationComponent},
-{path: 'careers',component:CareersComponent}
+{path: 'careers',component:CareersComponent},
+{path: 'profile',component:ProfileComponent},
+{path: 'products',component:ProductsComponent}
 
 ];
 @NgModule({
   imports: [
-
-
-  CommonModule,
+CommonModule,
     RouterModule.forRoot(routes)
   ],
   exports: [RouterModule],
@@ -50,5 +52,5 @@ export class AppRoutingModule { }
 
 export const routingComponents = [HomeComponent, ChestComponent, ShoulderComponent, BicepsComponent,
 TricepsComponent, BackComponent, LegsComponent, SignupComponent, LoginComponent,AboutUsComponent,
-ContactUsComponent,MotivationComponent,TransformationComponent,CareersComponent];
+ContactUsComponent,MotivationComponent,TransformationComponent,CareersComponent,ProfileComponent,ProductsComponent];
 
