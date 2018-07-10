@@ -1,3 +1,10 @@
 .container{
     margin-top:80px;
 }
+
+.card-img-top{
+    width:161px;
+    height:235px;
+    margin-top:30px;
+    margin-left:46px;
+}
