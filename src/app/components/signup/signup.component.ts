@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { Signup } from '../signup';
-import { AuthService } from '../services/auth.service';
-import { ValidateService } from '../services/validate.service';
+import { Signup } from '../../signup';
+import { AuthService } from '../../services/auth.service';
+import { ValidateService } from '../../services/validate.service';
 import { FlashMessagesService } from 'angular2-flash-messages';
 import { Router } from '@angular/router';
 

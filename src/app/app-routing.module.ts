@@ -1,25 +1,25 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes} from '@angular/router';
-import { HomeComponent } from './home/home.component';
+import { HomeComponent } from './components/home/home.component';
 import { ChestComponent } from './exercises/chest/chest.component';
 import { ShoulderComponent } from './exercises/shoulder/shoulder.component';
 import { BicepsComponent} from './exercises/biceps/biceps.component';
 import {TricepsComponent} from './exercises/triceps/triceps.component';
 import {BackComponent} from './exercises/back/back.component';
 import {LegsComponent} from './exercises/legs/legs.component';
-import {SignupComponent} from './signup/signup.component';
-import { LoginComponent } from './login/login.component';
-import {AboutUsComponent} from './about-us/about-us.component';
-import { ContactUsComponent } from './contact-us/contact-us.component';
+import {SignupComponent} from './components/signup/signup.component';
+import { LoginComponent } from './components/login/login.component';
+import {AboutUsComponent} from './components/about-us/about-us.component';
+import { ContactUsComponent } from './components/contact-us/contact-us.component';
 
 import { MotivationComponent } from './gallery/motivation/motivation.component';
 import { TransformationComponent } from './gallery/transformation/transformation.component';
 
-import { CareersComponent } from './careers/careers.component';
-import {ProfileComponent} from './profile/profile.component';
-import {ProductsComponent} from './products/products.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
+import { CareersComponent } from './components/careers/careers.component';
+import {ProfileComponent} from './components/profile/profile.component';
+import {ProductsComponent} from './components/products/products.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { AuthGuard } from './guards/auth.guard';
 
 const routes: Routes=[

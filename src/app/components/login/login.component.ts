@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthService } from '../services/auth.service';
-import { ValidateService } from '../services/validate.service';
+import { AuthService } from '../../services/auth.service';
+import { ValidateService } from '../../services/validate.service';
 import { FlashMessagesService } from 'angular2-flash-messages';
-import { Router } from '../../../node_modules/@angular/router';
+import { Router } from '../../../../node_modules/@angular/router';
 
 @Component({
   selector: 'app-login',

@@ -37,7 +37,7 @@ h2{
     text-align:center;
 }
 .values{
-    background-image: url("../../assets/images/about2.png");
+    background-image: url("../../../assets/images/about2.png"); 
     background-repeat: no-repeat;
     background-size: cover;
     height:400px;
