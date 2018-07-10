@@ -1,0 +1,15 @@
+
+footer{
+    margin-top:0px !important;
+    background-color:#1e2f2f;
+    color:white;
+  }
+  
+  .footer-copyright{
+      background-color:#324e4e; 
+  }
+  
+  
+  .col-md-2 a:hover{
+    text-decoration: none;
+  }

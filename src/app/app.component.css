@@ -3,21 +3,15 @@
   margin-left: 0px;
   margin-right: 0px;
   max-width: 100%;
+  margin-top:80px;
+}
+.abc{
+  margin-top:80px;
 }
 
 @font-face{
   font-family:'Bulls';
   src:url("../assets/fonts/TwoPeaks.ttf");
-}
-
-footer{
-  margin-top:0px !important;
-  background-color:#1e2f2f;
-  color:white;
-}
-
-.footer-copyright{
-    background-color:#324e4e; 
 }
 
 .navbar{
@@ -84,32 +78,6 @@ footer{
 
   .dropdown-menu{
     left:-93px;
-  }
-  
-  @media (min-width:768px) and (max-width:1012px){
-    .navbar-expand-md{
-      padding:5px;
-      font-size:15px;
-    }
-
-    .navbar-collapse{
-      padding:5px;
-      left:40px;
-    }
-
-    .nav-item{
-      margin-left:10px;
-    }
-
-    .navbar-expand-md .navbar-nav{
-      margin-left:20px;
-    }
-
-    .navbar-brand{
-      font-size:20px;
-    }
-
-    
   }
 
   @media(max-width:768px){

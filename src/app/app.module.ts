@@ -10,6 +10,8 @@ import { AuthService } from './services/auth.service';
 import { ValidateService } from './services/validate.service';
 import { FlashMessagesModule } from 'angular2-flash-messages';
 import { AuthGuard } from './guards/auth.guard';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 @NgModule({
@@ -17,6 +19,8 @@ import { AuthGuard } from './guards/auth.guard';
     AppComponent,
     routingComponents,
     DashboardComponent,
+    NavbarComponent,
+    FooterComponent,
     
      
   ],

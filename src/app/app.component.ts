@@ -1,9 +1,4 @@
 import { Component } from '@angular/core';
-import {Router , NavigationEnd} from '@angular/router';
-import { AuthService } from './services/auth.service';
-import { ValidateService } from './services/validate.service';
-import { FlashMessagesService } from 'angular2-flash-messages';
-
 
 @Component({
   selector: 'app-root',
@@ -12,29 +7,9 @@ import { FlashMessagesService } from 'angular2-flash-messages';
 })
 export class AppComponent {
   title = 'app';
-  constructor(private router: Router,
-    private authservice :AuthService,
-    private validatservice :ValidateService,
-private flashmessageservice :FlashMessagesService) { }
-isLoggedIn:boolean;
+  constructor(){}
+    
   ngOnInit() {
-this.isLoggedIn=this.authservice.loggedIn();
 
-    this.router.events.subscribe((evt) => {
-        if (!(evt instanceof NavigationEnd)) {
-            return;
-        }
-        window.scrollTo(0, 0)
-    });
-}
-
-logoutSubmit()
-{
-    this.authservice.LogOut();
-    this.flashmessageservice.show('You are logged out',{
-        cssClass:'alert-success',timeout:3000
-    });
-    this.router.navigate(['/login']);
-    return false;   
 }
 }
