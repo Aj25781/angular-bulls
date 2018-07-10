@@ -1,0 +1,69 @@
+
+  <nav class="navbar fixed-top navbar-expand-md navbar-dark">
+    <img class="img-responsive" src="../../../assets/images/icon.jpg" width='90px' height="70px" >
+    <a class="navbar-brand" href="#">Bulls Gym</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar" syt>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="" routerLink="/home" routerLinkActive="active">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            Exercises
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" routerLink="/exercises/chest" routerLinkActive="active">Chest</a>
+            <a class="dropdown-item" routerLink="/exercises/shoulder" routerLinkActive="active" style="margin:0px;">shoulder</a>
+            <a class="dropdown-item" routerLink="/exercises/biceps" routerLinkActive="active">Biceps</a>
+            <a class="dropdown-item" routerLink="/exercises/triceps" routerLinkActive="active">Triceps</a>
+            <a class="dropdown-item" routerLink="/exercises/back" routerLinkActive="active">Back</a>
+            <a class="dropdown-item" routerLink="/exercises/legs" routerLinkActive="active">Legs</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="" routerLink='/products' routerLinkActive="active">Products</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Gallery
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" routerLink="/gallery/motivation" routerLinkActive="active">Motivation's</a>
+              <a class="dropdown-item" routerLink="/gallery/transformation" routerLinkActive="active" style="margin:0px;">Transformation's</a>
+             
+            </div>
+          </li>
+       
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              <i class="fas fa-user-circle white-text"> </i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li class="nav-item" *ngIf="!authservice.loggedIn()">
+                    <a class="nav-link" href="#" id="nav-login" routerLink="/login" style="color:black">Login</a>
+                </li>
+                <li class="nav-item" *ngIf="!authservice.loggedIn()">
+                    <a class="nav-link" routerLink="/signup" id="nav-login" style="color:black">SignUp</a>
+                </li>
+                <li class="nav-item" *ngIf="authservice.loggedIn()">
+                    <a class="nav-link" routerLink="/profile" id="nav-login" style="color:black">Profile</a>
+                </li>
+                <li class="nav-item" *ngIf="authservice.loggedIn()">
+                  <a class="nav-link" routerLink="/dashboard" id="nav-login" style="color:black">Dashboard</a>
+              </li>
+                <li class="nav-item" *ngIf="authservice.loggedIn()">
+                    <a class="nav-link" href=""  id="nav-login" style="color:black" (click)="logoutSubmit()">Logout</a>
+                </li>
+            </div>
+          </li>
+
+      </ul>
+
+    </div>
+  </nav>
