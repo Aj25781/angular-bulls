@@ -36,7 +36,7 @@ const routes: Routes=[
 {path: 'about-us', component:AboutUsComponent},
 {path: 'contact-us',component:ContactUsComponent},
 {path: 'gallery/motivation',component:MotivationComponent},
-{path: 'gallery/transformatio',component:TransformationComponent},
+{path: 'gallery/transformation',component:TransformationComponent},
 {path: 'careers',component:CareersComponent},
 {path: 'profile',component:ProfileComponent,canActivate:[AuthGuard]},
 {path: 'products',component:ProductsComponent},
