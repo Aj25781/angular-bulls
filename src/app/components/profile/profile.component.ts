@@ -18,7 +18,7 @@ this.authservice.getProfile().subscribe(profile=>{
 err=>{
   console.log(err);
   return false;
-})
+});
 
   }
 
