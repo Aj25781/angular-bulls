@@ -12,6 +12,8 @@ import { FlashMessagesModule } from 'angular2-flash-messages';
 import { AuthGuard } from './guards/auth.guard';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { AdminComponent } from './admin/admin/admin.component';
+
 
 
 @NgModule({
@@ -21,6 +23,8 @@ import { FooterComponent } from './components/footer/footer.component';
     DashboardComponent,
     NavbarComponent,
     FooterComponent,
+    AdminComponent,
+    
     
      
   ],

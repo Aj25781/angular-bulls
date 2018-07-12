@@ -16,9 +16,35 @@ export class NavbarComponent implements OnInit {
     private validatservice :ValidateService,
 private flashmessageservice :FlashMessagesService) { }
 isLoggedIn:boolean;
-
+user:any;
+a:boolean;
+b:boolean;
   ngOnInit() {
     this.isLoggedIn=this.authservice.loggedIn();
+
+    
+    this.authservice.getProfile().subscribe(profile=>{
+        this.user=profile.user;
+    
+        if(this.user.email==='admin123@gmail.com')
+        {
+            console.log('admin_dashboard')
+          this.a=true;
+        }
+        else
+        {
+            console.log('user_dashboard')
+            this.b=true;
+        }  
+    
+    },
+      err=>{
+        console.log(err);
+        return false;
+      });
+      
+
+
 
     this.router.events.subscribe((evt) => {
         if (!(evt instanceof NavigationEnd)) {
