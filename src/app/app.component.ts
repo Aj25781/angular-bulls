@@ -7,6 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+ // email:string='admin@proj2ect.com';
+
+ /*
+ //*ngIf="email !='admin@project.com'"
+<div *ngIf="email == 'admin@project.com'">
+  UserContent
+</div>*/
   constructor(){}
     
   ngOnInit() {

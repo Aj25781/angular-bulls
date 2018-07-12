@@ -17,10 +17,11 @@ import { MotivationComponent } from './gallery/motivation/motivation.component';
 import { TransformationComponent } from './gallery/transformation/transformation.component';
 
 import { CareersComponent } from './components/careers/careers.component';
-import {ProfileComponent} from './components/profile/profile.component';
+
 import {ProductsComponent} from './components/products/products.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { AuthGuard } from './guards/auth.guard';
+import { AdminComponent } from './admin/admin/admin.component';
 
 const routes: Routes=[
 {path: '', redirectTo:'/home', pathMatch: 'full'},  
@@ -38,10 +39,10 @@ const routes: Routes=[
 {path: 'gallery/motivation',component:MotivationComponent},
 {path: 'gallery/transformation',component:TransformationComponent},
 {path: 'careers',component:CareersComponent},
-{path: 'profile',component:ProfileComponent,canActivate:[AuthGuard]},
-{path: 'products',component:ProductsComponent},
-{path: 'dashboard',component:DashboardComponent,canActivate:[AuthGuard]}
 
+{path: 'products',component:ProductsComponent},
+{path: 'dashboard',component:DashboardComponent,canActivate:[AuthGuard]},
+{path: 'admin',component:AdminComponent}
 ];
 @NgModule({
   imports: [
@@ -55,5 +56,5 @@ export class AppRoutingModule { }
 
 export const routingComponents = [HomeComponent, ChestComponent, ShoulderComponent, BicepsComponent,
 TricepsComponent, BackComponent, LegsComponent, SignupComponent, LoginComponent,AboutUsComponent,
-ContactUsComponent,MotivationComponent,TransformationComponent,CareersComponent,ProfileComponent,ProductsComponent,DashboardComponent];
+ContactUsComponent,MotivationComponent,TransformationComponent,CareersComponent,ProductsComponent,DashboardComponent];
 

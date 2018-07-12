@@ -12,7 +12,7 @@ import { Router } from '../../../../node_modules/@angular/router';
 export class LoginComponent implements OnInit {
 email:string;
 password:string;
-
+user:Object;
   constructor(private authservice :AuthService,
     private validateservice :ValidateService,
   private flashmessages :FlashMessagesService,
@@ -21,7 +21,7 @@ private router :Router
 
   ngOnInit() {
   }
-  LoginSubmit()
+  LoginSubmit() 
   {
 const user={
   email:this.email,
@@ -32,7 +32,14 @@ if(data.success)
 {
 this.authservice.storeUserData(data.token,data.user);
 this.flashmessages.show('Now you are loggedIn',{cssClass:'alert-success',timeout:3000});
+this.authservice.getProfile().subscribe(profile=>{
+  this.user=profile.user;
 this.router.navigate(['/dashboard']);
+},
+err=>{
+  console.log(err);
+  return false;
+});
 }
 else
 {
@@ -42,3 +49,4 @@ this.router.navigate(['/login']);
 });
 }
 }
+
