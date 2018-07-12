@@ -28,13 +28,14 @@ b:boolean;
     
         if(this.user.email==='admin123@gmail.com')
         {
-            console.log('admin_dashboard')
+            
           this.a=true;
+          console.log('admin_dashboard');
         }
         else
         {
-            console.log('user_dashboard')
             this.b=true;
+            console.log('user_dashboard');
         }  
     
     },
