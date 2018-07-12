@@ -34,23 +34,12 @@ this.authservice.storeUserData(data.token,data.user);
 this.flashmessages.show('Now you are loggedIn',{cssClass:'alert-success',timeout:3000});
 this.authservice.getProfile().subscribe(profile=>{
   this.user=profile.user;
+this.router.navigate(['/dashboard']);
 },
 err=>{
   console.log(err);
   return false;
 });
-
-if(user.email==='admin123@gmail.com' && user.password==='admin123')
-{
-  console.log('admin');
-  this.router.navigate(['/admin']);  
-}
-else
-{
-  console.log('user');
-  this.router.navigate(['/dashboard']);
-}
-
 }
 else
 {

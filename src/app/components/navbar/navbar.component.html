@@ -51,15 +51,10 @@
                 <li class="nav-item" *ngIf="!authservice.loggedIn()">
                     <a class="nav-link" routerLink="/signup" id="nav-login" style="color:black">SignUp</a>
                 </li>
+                
                 <li class="nav-item" *ngIf="authservice.loggedIn()">
-                    <a class="nav-link" routerLink="/profile" id="nav-login" style="color:black">Profile</a>
-                </li>
-                <li class="nav-item" *ngIf="authservice.loggedIn()">
-                  <div *ngIf="a">
-                  <a class="nav-link" routerLink="/admin" id="nav-login" style="color:black">Dashboard</a>
-                </div>
-                <div *ngIf="b">
-                    <a class="nav-link" routerLink="/dashboard" id="nav-login" style="color:black">Dashboard</a>
+                  <div>
+                  <a class="nav-link" routerLink="/dashboard" id="nav-login" style="color:black">Dashboard</a>
                   </div>
                 </li>
                 <li class="nav-item" *ngIf="authservice.loggedIn()">
