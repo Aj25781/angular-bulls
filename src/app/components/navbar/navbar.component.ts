@@ -21,35 +21,6 @@ a:boolean;
 b:boolean;
   ngOnInit() {
     this.isLoggedIn=this.authservice.loggedIn();
-<<<<<<< HEAD
-
-    
-    this.authservice.getProfile().subscribe(profile=>{
-        this.user=profile.user;
-    
-        if(this.user.email==='admin123@gmail.com')
-        {
-            
-          this.a=true;
-          console.log('admin_dashboard');
-        }
-        else
-        {
-            this.b=true;
-            console.log('user_dashboard');
-        }  
-    
-    },
-      err=>{
-        console.log(err);
-        return false;
-      });
-      
-
-
-
-=======
->>>>>>> c06cf2320d1252949797cfc1604cd6f6e6b3a65f
     this.router.events.subscribe((evt) => {
         if (!(evt instanceof NavigationEnd)) {
             return;
