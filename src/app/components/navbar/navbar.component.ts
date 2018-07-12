@@ -21,6 +21,7 @@ a:boolean;
 b:boolean;
   ngOnInit() {
     this.isLoggedIn=this.authservice.loggedIn();
+<<<<<<< HEAD
 
     
     this.authservice.getProfile().subscribe(profile=>{
@@ -47,6 +48,8 @@ b:boolean;
 
 
 
+=======
+>>>>>>> c06cf2320d1252949797cfc1604cd6f6e6b3a65f
     this.router.events.subscribe((evt) => {
         if (!(evt instanceof NavigationEnd)) {
             return;

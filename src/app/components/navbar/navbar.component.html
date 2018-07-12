@@ -51,7 +51,9 @@
                 <li class="nav-item" *ngIf="!authservice.loggedIn()">
                     <a class="nav-link" routerLink="/signup" id="nav-login" style="color:black">SignUp</a>
                 </li>
+                
                 <li class="nav-item" *ngIf="authservice.loggedIn()">
+<<<<<<< HEAD
                     <a class="nav-link" routerLink="/profile" id="nav-login" style="color:black">Profile</a>
                 </li>
                 <li class="nav-item" *ngIf="authservice.loggedIn()">
@@ -60,6 +62,10 @@
                 </div>
                 <div *ngIf="!a">
                     <a class="nav-link" routerLink="/dashboard" id="nav-login" style="color:black">Dashboard</a>
+=======
+                  <div>
+                  <a class="nav-link" routerLink="/dashboard" id="nav-login" style="color:black">Dashboard</a>
+>>>>>>> c06cf2320d1252949797cfc1604cd6f6e6b3a65f
                   </div>
                 </li>
                 <li class="nav-item" *ngIf="authservice.loggedIn()">
