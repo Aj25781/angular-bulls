@@ -22,6 +22,7 @@ import {ProductsComponent} from './components/products/products.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { AuthGuard } from './guards/auth.guard';
 import { AdminComponent } from './admin/admin/admin.component';
+import {PackagesComponent} from './components/packages/packages.component';
 
 const routes: Routes=[
 {path: '', redirectTo:'/home', pathMatch: 'full'},  
@@ -39,7 +40,7 @@ const routes: Routes=[
 {path: 'gallery/motivation',component:MotivationComponent},
 {path: 'gallery/transformation',component:TransformationComponent},
 {path: 'careers',component:CareersComponent},
-
+{path:'packages',component:PackagesComponent},
 {path: 'products',component:ProductsComponent},
 {path: 'dashboard',component:DashboardComponent,canActivate:[AuthGuard]},
 {path: 'admin',component:AdminComponent}
@@ -56,5 +57,6 @@ export class AppRoutingModule { }
 
 export const routingComponents = [HomeComponent, ChestComponent, ShoulderComponent, BicepsComponent,
 TricepsComponent, BackComponent, LegsComponent, SignupComponent, LoginComponent,AboutUsComponent,
-ContactUsComponent,MotivationComponent,TransformationComponent,CareersComponent,ProductsComponent,DashboardComponent];
+ContactUsComponent,MotivationComponent,TransformationComponent,CareersComponent,ProductsComponent,
+DashboardComponent,PackagesComponent];
 
