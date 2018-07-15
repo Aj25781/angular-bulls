@@ -30,3 +30,10 @@ padding-top:100px;
 .lower .col-md-4{
     padding-left:0px !important;
 }
+#bottom{
+    margin-top:0px !important;
+    height:300px;
+    width:900px;
+    margin-left:230px;
+  
+  }
