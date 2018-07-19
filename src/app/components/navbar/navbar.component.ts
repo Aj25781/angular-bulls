@@ -20,6 +20,7 @@ user:any;
 a:boolean;
 b:boolean;
   ngOnInit() {
+    this.authservice.loadToken();  
     this.isLoggedIn=this.authservice.loggedIn();
     this.router.events.subscribe((evt) => {
         if (!(evt instanceof NavigationEnd)) {

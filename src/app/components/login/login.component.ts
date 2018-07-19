@@ -20,6 +20,24 @@ private router :Router
 ) { }
 
   ngOnInit() {
+
+    if(this.authservice.checkStorage()==false){
+      const user={
+        email:this.email,
+      password:this.password
+      }
+        
+        this.authservice.getProfile().subscribe(profile=>{
+          this.user=profile.user;
+        this.router.navigate(['/dashboard']);
+        },
+        err=>{
+          console.log(err);
+          return false;
+        });
+        
+    }
+    
   }
   LoginSubmit() 
   {

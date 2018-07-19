@@ -44,6 +44,15 @@ storeUserData(token,user)
   this.authToken=token;
   this.user=user;
 }
+
+checkStorage(){
+  if(window.localStorage.length == null){
+    return true;
+  }
+  else{
+    return false;
+  }
+}
 loadToken()
 {
   const token=localStorage.getItem('id_token');
