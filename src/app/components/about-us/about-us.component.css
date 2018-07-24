@@ -18,6 +18,10 @@
    
 }
 
+.row{
+    margin-right:0px!important;
+}
+
 h2{
     font-family:Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     letter-spacing:1px;

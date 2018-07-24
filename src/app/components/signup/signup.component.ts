@@ -52,8 +52,11 @@ export class SignupComponent implements OnInit {
       gender: this.myForm.value.gender,
       password: this.myForm.value.password
     }
+    var phone_length = this.myForm.value.contact_no.toString().length;
+    var age_length=this.myForm.value.age;
     if (!this.validateservice.validateRegister(newUser)) {
       this.flashmessages.show('Please fill in all fields', { cssClass: 'alert-danger', timeout: 3000 });
+      console.log('please fill in all fields');
       return false;
     }
     if(!this.validateservice.validateEmail(newUser.email))
@@ -61,8 +64,17 @@ export class SignupComponent implements OnInit {
       this.flashmessages.show('Please fill the valid email ',{cssClass:'alert-danger',timeout:3000});
       return false;
     }
+    if(phone_length!=10){
+      this.flashmessages.show('Please fill the valid Contact no. ',{cssClass:'alert-danger',timeout:3000});
+      return false;
+    }
+    if(age_length<15 || age_length>65){
+      this.flashmessages.show('Please fill the Age between 15 and 65. ',{cssClass:'alert-danger',timeout:3000});
+      return false;
+    }
     if(this.myForm.controls.password.value!=this.myForm.controls.Cnfpassword.value)
      {
+      this.flashmessages.show('Password not matched',{cssClass:'alert-danger',timeout:3000});
       console.log('!Invalid password');
       return false;
       
